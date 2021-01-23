@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <title> Family App </title>
+ </head>
+
+ <body>
+  <h1 id="head"> My Family Book </h1> 
+  <img src="download.jpg" id="fam img">
+  <h3 id="fam names"> </h3>
+  <button type = "button" onclick = "nextslide()"> 
+    Next 
+  </button>
+ </body>
+ 
+ <script>
+   var images = [
+     "dad1.jpg",
+     "mom.jpg",
+     "sister.jpg",
+     "me.jpg"
+     ] ;
+  
+
+     var i = 0
+     function nextslide() {
+     document.getElementById("fam img").src = images[i]
+  
+     i++ ;
+     if (i > 5)
+     i = 0
+     }
+ </script>
+</html>
